@@ -4,6 +4,7 @@ import ProductController from './products/controller';
 import setupDb from './db'
 
 const app = createKoaServer({
+    cors: true,
   controllers: [
     ProductController
   ]
