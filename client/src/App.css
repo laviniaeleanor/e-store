@@ -1,28 +1,68 @@
-.App {
-  text-align: center;
+
+div.header {
+    height: 10em;
+    position: relative ;
+    background-color: #3b9b99;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+div.header h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #FFF;
+    font-family: "Raleway";
+     }
+
+body {
+    font-family: "Raleway";
+
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+table {
+    margin:10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
 }
 
-.App-title {
-  font-size: 1.5em;
+h2 {
+    margin:10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
 }
 
-.App-intro {
-  font-size: large;
+
+.form-style-1 {
+    margin:10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style-1 li {
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+.form-style-1 label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display:block;
+    font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.productForm{
+    background-color: #3b9b99;
+    color: #FFF;
+    margin:10px auto;
+    padding: 20px 12px 10px 20px;
+}
+
+.ProductDetails {
+    margin:10px auto;
+    max-width: 400px;
+    padding: 20px 12px 10px 20px;
 }

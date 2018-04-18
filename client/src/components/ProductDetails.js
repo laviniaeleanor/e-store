@@ -21,12 +21,17 @@ class ProductDetails extends PureComponent {
 
           return (
             <div>
-            <Link to={ `/products` }>Home</Link>
-              <p>&euro; {product.price}.00</p>
+            <Link to={ `/products` }><div class = "header">
+              <h1>the M@rket</h1>
+              </div></Link>
+              <div class = "ProductDetails">
+              <h2>{product.description} - &euro; {product.price}.00</h2>
               <img src = { product.picture } alt = {product.description}  style={{maxWidth: 200 + 'px'}}/>
-              <p>{product.description}</p>
-              <p> For more information about this product contact: {product.email} {product.phone} </p>
+              <p>For more information about this product contact:</p>
+              <p>{product.email} </p>
+              <p>{product.phone} </p>
               <button>Buy this product</button>
+            </div>
             </div>
           )
         }

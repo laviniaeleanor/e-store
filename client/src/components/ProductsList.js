@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { fetchAllProducts, createProduct } from '../actions/products'
 import { Link } from 'react-router-dom'
-// import ProductForm from './ProductForm.js'
+import ProductForm from './ProductForm'
 
 class ProductsList extends PureComponent {
 
@@ -18,8 +18,10 @@ class ProductsList extends PureComponent {
     const {products} = this.props
     return (
       <div>
-        <h1>All products</h1>
-
+      <div class = "header">
+        <h1>the M@rket</h1>
+        </div>
+        <h2>Latest advertisements</h2>
         <table>
           <thead>
             <tr>
@@ -35,10 +37,11 @@ class ProductsList extends PureComponent {
                   <Link to={ `/products/${product.id}` }>{product.description}</Link>
                 </td>
               <td>&euro; {product.price}.00</td>
-               <td><button onClick={ () => this.deleteProduct(product.id) }>Delete</button></td>
             </tr>)) }
           </tbody>
 				</table>
+            <div class="productForm"><h2>New advertisement</h2>
+            <ProductForm onSubmit={this.createProduct} /></div>
       </div>
     )
   }
